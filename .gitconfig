@@ -1,0 +1,17 @@
+[user]
+	name = arreche
+	email = arreche@gmail.com
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[push]
+	default = simple
+[help]
+	autocorrect = 1
