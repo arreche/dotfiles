@@ -52,10 +52,6 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-surround'
-Plug 'eslint/eslint'
-
-" Lang
-Plug 'pangloss/vim-javascript'
 
 call plug#end()
 

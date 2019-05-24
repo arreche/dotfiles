@@ -1,13 +1,10 @@
+#!/bin/sh
+
 # Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew cask install blockblock
-brew tap Homebrew/bundle
 brew bundle
 brew cleanup
-
-# RVM
-gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-\curl -sSL https://get.rvm.io | bash -s stable
 
 # Vim Plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -17,8 +14,3 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 # Block ads. Use ublock in your web browsers and a DNS filter in your router
 git clone --depth 5 https://github.com/StevenBlack/hosts.git /tmp/hosts
 python /tmp/hosts/updateHostsFile.py -arf
-
-# Other
-pip install howdoi
-
-rm -rf ~/.git
